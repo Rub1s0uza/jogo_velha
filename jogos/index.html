@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="center">
+        <h1>Jogo da Velha</h1>
+       <div>
+           <p>Jogar com o Computador</p>
+           <input type="radio" name="cpu" value="sim">
+           <label for="cpu">SIM</label>
+           <input type="radio" name="cpu" value="nao">
+           <label for="cpu">NÃO</label>
+       </div>
+        <table width="200" border="1">
+            <tbody>
+            
+                <tr>
+                    <td> <img src="img/transp.png" alt="transparente" id="c1" onclick="return checkjogo(this.id)"></td>
+                    <td> <img src="img/transp.png" alt="transparente" id="c2" onclick="return checkjogo(this.id)"></td>
+                    <td> <img src="img/transp.png" alt="transparente" id="c3" onclick="return checkjogo(this.id)"></td>
+                </tr>
+                <tr>
+                    <td> <img src="img/transp.png" alt="transparente" id="c4" onclick="checkjogo(this.id)"></td>
+                    <td> <img src="img/transp.png" alt="transparente" id="c5" onclick="checkjogo(this.id)"></td>
+                    <td> <img src="img/transp.png" alt="transparente" id="c6" onclick="checkjogo(this.id)"></td>
+                </tr>
+                <tr>
+                    <td> <img src="img/transp.png" alt="transparente" id="c7" onclick="checkjogo(this.id)"></td>
+                    <td> <img src="img/transp.png" alt="transparente" id="c8" onclick="checkjogo(this.id)"></td>
+                    <td> <img src="img/transp.png" alt="transparente" id="c9" onclick="checkjogo(this.id)"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
